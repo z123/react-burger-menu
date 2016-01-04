@@ -250,7 +250,10 @@ exports['default'] = function (styles) {
             });
         },
         listenForClose: function listenForClose(e) {
-            console.log(e);
+            e = e || window.event;
+            if (this.state.isOpen && (e.key === 'Escape' || e.keyCode === 27)) {
+                this.toggleMenu();
+            }
         },
         getDefaultProps: function getDefaultProps() {
             return {
