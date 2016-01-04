@@ -250,10 +250,7 @@ exports['default'] = function (styles) {
             });
         },
         listenForClose: function listenForClose(e) {
-            e = e || window.event;
-            if (this.state.isOpen && (e.key === 'Escape' || e.keyCode === 27)) {
-                this.toggleMenu();
-            }
+            console.log(e);
         },
         getDefaultProps: function getDefaultProps() {
             return {
@@ -298,7 +295,7 @@ exports['default'] = function (styles) {
                     var snap = undefined;
                     try {
                         snap = function () {
-                            throw new Error('Cannot find module \'imports?this=>window,fix=>module.exports=0!snapsvg/dist/snap.svg.js\' from \'/Users/z/Documents/projects/react-burger-menu/src\'');
+                            throw new Error('Cannot find module \'imports?this=>window,fix=>module.exports=0!snapsvg/dist/snap.svg.js\' from \'/home/development/Documents/projects/react-burger-menu/src\'');
                         }();
                     } catch (e) {
                         snap = typeof window !== 'undefined' ? window['Snap'] : typeof global !== 'undefined' ? global['Snap'] : null;

@@ -79,11 +79,12 @@ export default (styles) => {
     },
 
     listenForClose(e) {
-      e = e || window.event;
+      console.log(e);
+      //e = e || window.event;
 
-      if (this.state.isOpen && (e.key === 'Escape' || e.keyCode === 27)) {
-        this.toggleMenu();
-      }
+      //if (this.state.isOpen && (e.key === 'Escape' || e.keyCode === 27)) {
+        //this.toggleMenu();
+      //}
     },
 
     getDefaultProps() {
