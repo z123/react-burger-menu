@@ -221,7 +221,6 @@ export default (styles) => {
 
       return (
         <div>
-          <div className="bm-overlay" onClick={ this.toggleMenu } style={ baseStyles.overlay(this.state.isOpen) }></div>
           <div id={ this.props.id } className={ "bm-menu-wrap" } style={ menuWrapStyles }>
             { svg }
             <div className="bm-menu" style={ menuStyles } >
